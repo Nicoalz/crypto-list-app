@@ -11,6 +11,9 @@
 		F0A9251D2B0B6C3100886A56 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F0A9251C2B0B6C3100886A56 /* ContentView.swift */; };
 		F0A9251F2B0B6C3200886A56 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F0A9251E2B0B6C3200886A56 /* Assets.xcassets */; };
 		F0A925222B0B6C3200886A56 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F0A925212B0B6C3200886A56 /* Preview Assets.xcassets */; };
+		F0A925292B0B9F6C00886A56 /* FavoriteView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F0A925282B0B9F6C00886A56 /* FavoriteView.swift */; };
+		F0A9252B2B0B9F7F00886A56 /* AddCryptoForm.swift in Sources */ = {isa = PBXBuildFile; fileRef = F0A9252A2B0B9F7F00886A56 /* AddCryptoForm.swift */; };
+		F0A9252D2B0BA1F200886A56 /* CryptoRowView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F0A9252C2B0BA1F200886A56 /* CryptoRowView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -19,6 +22,9 @@
 		F0A9251C2B0B6C3100886A56 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		F0A9251E2B0B6C3200886A56 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		F0A925212B0B6C3200886A56 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		F0A925282B0B9F6C00886A56 /* FavoriteView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FavoriteView.swift; sourceTree = "<group>"; };
+		F0A9252A2B0B9F7F00886A56 /* AddCryptoForm.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddCryptoForm.swift; sourceTree = "<group>"; };
+		F0A9252C2B0BA1F200886A56 /* CryptoRowView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CryptoRowView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -52,7 +58,10 @@
 			isa = PBXGroup;
 			children = (
 				F0A9251A2B0B6C3100886A56 /* VibeApp.swift */,
+				F0A9252A2B0B9F7F00886A56 /* AddCryptoForm.swift */,
+				F0A925282B0B9F6C00886A56 /* FavoriteView.swift */,
 				F0A9251C2B0B6C3100886A56 /* ContentView.swift */,
+				F0A9252C2B0BA1F200886A56 /* CryptoRowView.swift */,
 				F0A9251E2B0B6C3200886A56 /* Assets.xcassets */,
 				F0A925202B0B6C3200886A56 /* Preview Content */,
 			);
@@ -137,7 +146,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F0A9252B2B0B9F7F00886A56 /* AddCryptoForm.swift in Sources */,
+				F0A9252D2B0BA1F200886A56 /* CryptoRowView.swift in Sources */,
 				F0A9251D2B0B6C3100886A56 /* ContentView.swift in Sources */,
+				F0A925292B0B9F6C00886A56 /* FavoriteView.swift in Sources */,
 				F0A9251B2B0B6C3100886A56 /* VibeApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
