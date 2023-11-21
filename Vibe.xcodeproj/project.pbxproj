@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		F0A0CDD42B0CDD1400AA3972 /* CryptoDetailsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F0A0CDD32B0CDD1400AA3972 /* CryptoDetailsView.swift */; };
+		F0A0CDD62B0CF1E000AA3972 /* Crypto.swift in Sources */ = {isa = PBXBuildFile; fileRef = F0A0CDD52B0CF1E000AA3972 /* Crypto.swift */; };
 		F0A9251B2B0B6C3100886A56 /* VibeApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = F0A9251A2B0B6C3100886A56 /* VibeApp.swift */; };
 		F0A9251D2B0B6C3100886A56 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F0A9251C2B0B6C3100886A56 /* ContentView.swift */; };
 		F0A9251F2B0B6C3200886A56 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F0A9251E2B0B6C3200886A56 /* Assets.xcassets */; };
@@ -17,6 +19,8 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		F0A0CDD32B0CDD1400AA3972 /* CryptoDetailsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CryptoDetailsView.swift; sourceTree = "<group>"; };
+		F0A0CDD52B0CF1E000AA3972 /* Crypto.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Crypto.swift; sourceTree = "<group>"; };
 		F0A925172B0B6C3100886A56 /* Vibe.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Vibe.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		F0A9251A2B0B6C3100886A56 /* VibeApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VibeApp.swift; sourceTree = "<group>"; };
 		F0A9251C2B0B6C3100886A56 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -61,6 +65,8 @@
 				F0A9252A2B0B9F7F00886A56 /* AddCryptoForm.swift */,
 				F0A925282B0B9F6C00886A56 /* FavoriteView.swift */,
 				F0A9251C2B0B6C3100886A56 /* ContentView.swift */,
+				F0A0CDD52B0CF1E000AA3972 /* Crypto.swift */,
+				F0A0CDD32B0CDD1400AA3972 /* CryptoDetailsView.swift */,
 				F0A9252C2B0BA1F200886A56 /* CryptoRowView.swift */,
 				F0A9251E2B0B6C3200886A56 /* Assets.xcassets */,
 				F0A925202B0B6C3200886A56 /* Preview Content */,
@@ -146,10 +152,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F0A0CDD42B0CDD1400AA3972 /* CryptoDetailsView.swift in Sources */,
 				F0A9252B2B0B9F7F00886A56 /* AddCryptoForm.swift in Sources */,
 				F0A9252D2B0BA1F200886A56 /* CryptoRowView.swift in Sources */,
 				F0A9251D2B0B6C3100886A56 /* ContentView.swift in Sources */,
 				F0A925292B0B9F6C00886A56 /* FavoriteView.swift in Sources */,
+				F0A0CDD62B0CF1E000AA3972 /* Crypto.swift in Sources */,
 				F0A9251B2B0B6C3100886A56 /* VibeApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

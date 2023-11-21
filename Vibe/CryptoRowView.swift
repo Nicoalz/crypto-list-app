@@ -8,7 +8,7 @@
 import SwiftUI
 
 struct CryptoRowView: View {
-    var crypto: Crypto
+    @ObservedObject var crypto: Crypto
 
     var body: some View {
         HStack {
@@ -27,10 +27,8 @@ struct CryptoRowView: View {
                     .foregroundColor(.gray)
             }
             Spacer()
-            if crypto.isOwned {
-                Image(systemName: "checkmark.circle.fill")
-                    .foregroundColor(.green)
-            }
+            Image(systemName: crypto.isOwned ? "checkmark.circle.fill" : "xmark.circle.fill")
+                .foregroundColor(crypto.isOwned ? .green : .red)
         }
     }
 }
