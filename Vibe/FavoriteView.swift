@@ -25,7 +25,7 @@ struct FavoriteView: View {
                         CryptoRowView(crypto: crypto)
                     }
                 }
-                .onDelete(perform: deleteCrypto)
+                .onDelete(perform: deleteCrypto) 
             }
             .navigationTitle("Favoris")
             .toolbar {
@@ -52,7 +52,7 @@ struct FavoriteView: View {
 
 
 
-struct FavoriteView_Previews: PreviewProvider {
+struct FavoriteView_Previews: PreviewProvider { 
     static var previews: some View {
         FavoriteView(cryptoList: CryptoList(cryptos: Crypto.previewData))
     }
