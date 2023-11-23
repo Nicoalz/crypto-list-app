@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		F075C88E2B0F87AA00F9B5A5 /* FileManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = F075C88D2B0F87AA00F9B5A5 /* FileManager.swift */; };
+		F075C8902B0F8E0800F9B5A5 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F075C88F2B0F8E0800F9B5A5 /* LaunchScreen.storyboard */; };
 		F0A0CDD42B0CDD1400AA3972 /* CryptoDetailsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F0A0CDD32B0CDD1400AA3972 /* CryptoDetailsView.swift */; };
 		F0A0CDD62B0CF1E000AA3972 /* Crypto.swift in Sources */ = {isa = PBXBuildFile; fileRef = F0A0CDD52B0CF1E000AA3972 /* Crypto.swift */; };
 		F0A9251B2B0B6C3100886A56 /* VibeApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = F0A9251A2B0B6C3100886A56 /* VibeApp.swift */; };
@@ -19,6 +21,8 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		F075C88D2B0F87AA00F9B5A5 /* FileManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FileManager.swift; sourceTree = "<group>"; };
+		F075C88F2B0F8E0800F9B5A5 /* LaunchScreen.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = LaunchScreen.storyboard; sourceTree = "<group>"; };
 		F0A0CDD32B0CDD1400AA3972 /* CryptoDetailsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CryptoDetailsView.swift; sourceTree = "<group>"; };
 		F0A0CDD52B0CF1E000AA3972 /* Crypto.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Crypto.swift; sourceTree = "<group>"; };
 		F0A925172B0B6C3100886A56 /* Vibe.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Vibe.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -45,6 +49,7 @@
 		F0A9250E2B0B6C3100886A56 = {
 			isa = PBXGroup;
 			children = (
+				F075C88F2B0F8E0800F9B5A5 /* LaunchScreen.storyboard */,
 				F0A925192B0B6C3100886A56 /* Vibe */,
 				F0A925182B0B6C3100886A56 /* Products */,
 			);
@@ -63,6 +68,7 @@
 			children = (
 				F0A9251A2B0B6C3100886A56 /* VibeApp.swift */,
 				F0A9252A2B0B9F7F00886A56 /* AddCryptoForm.swift */,
+				F075C88D2B0F87AA00F9B5A5 /* FileManager.swift */,
 				F0A925282B0B9F6C00886A56 /* FavoriteView.swift */,
 				F0A9251C2B0B6C3100886A56 /* ContentView.swift */,
 				F0A0CDD52B0CF1E000AA3972 /* Crypto.swift */,
@@ -140,6 +146,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F075C8902B0F8E0800F9B5A5 /* LaunchScreen.storyboard in Resources */,
 				F0A925222B0B6C3200886A56 /* Preview Assets.xcassets in Resources */,
 				F0A9251F2B0B6C3200886A56 /* Assets.xcassets in Resources */,
 			);
@@ -159,6 +166,7 @@
 				F0A925292B0B9F6C00886A56 /* FavoriteView.swift in Sources */,
 				F0A0CDD62B0CF1E000AA3972 /* Crypto.swift in Sources */,
 				F0A9251B2B0B6C3100886A56 /* VibeApp.swift in Sources */,
+				F075C88E2B0F87AA00F9B5A5 /* FileManager.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -287,8 +295,9 @@
 		F0A925262B0B6C3200886A56 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_APPICON_NAME = Vibe;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				ASSETCATALOG_COMPILER_INCLUDE_ALL_APPICON_ASSETS = YES;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"Vibe/Preview Content\"";
@@ -298,6 +307,7 @@
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen.storyboard;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -316,8 +326,9 @@
 		F0A925272B0B6C3200886A56 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_APPICON_NAME = Vibe;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				ASSETCATALOG_COMPILER_INCLUDE_ALL_APPICON_ASSETS = YES;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"Vibe/Preview Content\"";
@@ -327,6 +338,7 @@
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen.storyboard;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				LD_RUNPATH_SEARCH_PATHS = (

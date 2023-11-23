@@ -6,26 +6,64 @@
 //
 
 import Foundation
-class CryptoList: ObservableObject {
+class CryptoList: ObservableObject, Codable {
     @Published var cryptos: [Crypto]
+
+    enum CodingKeys: CodingKey {
+        case cryptos
+    }
+
     init(cryptos: [Crypto]) {
         self.cryptos = cryptos
     }
+
+    required init(from decoder: Decoder) throws {
+        let container = try decoder.container(keyedBy: CodingKeys.self)
+        cryptos = try container.decode([Crypto].self, forKey: .cryptos)
+    }
+
+    func encode(to encoder: Encoder) throws {
+        var container = encoder.container(keyedBy: CodingKeys.self)
+        try container.encode(cryptos, forKey: .cryptos)
+    }
 }
 
-class Crypto: ObservableObject, Identifiable {
-    let id = UUID()
+class Crypto: ObservableObject, Identifiable, Codable {
+    var id = UUID()
     @Published var name: String
     @Published var price: Float
     @Published var imageUrl: String
     @Published var isOwned: Bool
+    // Ensure that CryptoInfo is Codable if you need to persist it
     @Published var cryptoInfo: CryptoInfo?
-    
+
+    enum CodingKeys: CodingKey {
+        case id, name, price, imageUrl, isOwned, cryptoInfo
+    }
+
     init(name: String, price: Float, imageUrl: String, isOwned: Bool) {
         self.name = name
         self.price = price
         self.imageUrl = imageUrl
         self.isOwned = isOwned
+    }
+
+    required init(from decoder: Decoder) throws {
+        let container = try decoder.container(keyedBy: CodingKeys.self)
+        id = try container.decode(UUID.self, forKey: .id)
+        name = try container.decode(String.self, forKey: .name)
+        price = try container.decode(Float.self, forKey: .price)
+        imageUrl = try container.decode(String.self, forKey: .imageUrl)
+        isOwned = try container.decode(Bool.self, forKey: .isOwned)
+    }
+
+    func encode(to encoder: Encoder) throws {
+        var container = encoder.container(keyedBy: CodingKeys.self)
+        try container.encode(id, forKey: .id)
+        try container.encode(name, forKey: .name)
+        try container.encode(price, forKey: .price)
+        try container.encode(imageUrl, forKey: .imageUrl)
+        try container.encode(isOwned, forKey: .isOwned)
     }
 }
 

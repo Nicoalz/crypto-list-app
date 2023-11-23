@@ -14,9 +14,13 @@ struct FavoriteView: View {
     @State private var showingForm = false
     
     // Initialisez avec un CryptoList vide pour une utilisation normale
-    init(cryptoList: CryptoList = CryptoList(cryptos: [])) {
-        _cryptoList = StateObject(wrappedValue: cryptoList)
-    }
+    init() {
+            if let loadedCryptoList = FileManagerHelper.shared.loadCryptoList() {
+                _cryptoList = StateObject(wrappedValue: loadedCryptoList)
+            } else {
+                _cryptoList = StateObject(wrappedValue: CryptoList(cryptos: []))
+            }
+        }
     var body: some View {
         NavigationView {
             List {
@@ -45,6 +49,7 @@ struct FavoriteView: View {
     
     private func deleteCrypto(at offsets: IndexSet) {
         cryptoList.cryptos.remove(atOffsets: offsets)
+        FileManagerHelper.shared.saveCryptoList(cryptoList)
     }
     
 }
@@ -54,6 +59,6 @@ struct FavoriteView: View {
 
 struct FavoriteView_Previews: PreviewProvider { 
     static var previews: some View {
-        FavoriteView(cryptoList: CryptoList(cryptos: Crypto.previewData))
+        FavoriteView()
     }
 }
